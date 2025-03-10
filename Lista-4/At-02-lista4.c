@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-int main(){
-int n,soma=0, numImp;
+int main() {
+    int n,  soma= 0, num = 1;
 
-
-    printf("digite n: ");
+    printf("Digite n: ");
     scanf("%d", &n);
-    n=n*2;
-    while(soma<n){
-    soma++;
-        if(soma % 2 != 0){
-            printf("%d\n", soma);
-        }
+
+    while (soma<n) {
+        printf("%d ", num);
+        num += 2;
+        soma++;
     }
+
+    printf("\n");
     return 0;
 }
