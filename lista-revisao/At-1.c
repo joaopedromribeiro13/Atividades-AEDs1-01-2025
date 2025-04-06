@@ -2,16 +2,17 @@
 
 void multiplo(int n) {
     for(int i = 1; i<=n; i++) {
-        printf("%d", i*3);
+        printf("%d ", i*3);
     }
+    return;
 }
 
 
 int main() {
-    int n, num;
+    int n;
 
     printf("Digite um numero inteiro:\n");
-    scanf("%d", &num);
+    scanf("%d", &n);
     multiplo(n);
 
     return 0;
