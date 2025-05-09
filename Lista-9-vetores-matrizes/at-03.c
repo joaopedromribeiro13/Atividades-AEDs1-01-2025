@@ -11,7 +11,7 @@ int menorposicao(int vetor[], int tam) {
     int menor=0;
 
     for(int i=1; i<tam; i++) {
-        if(vetor[i]<menor) {
+        if(vetor[i]<vetor[menor]) {
             menor=i;
         }
     }
@@ -19,9 +19,17 @@ return menor;
 }
 
 void trocaComPrimeiro(int vetor[], int tam) {
-    int posMenor = menorposicao(vetor, tam);
+    int trocaComMenor = menorposicao(vetor, tam);
 
-    
+    int temp=vetor[0];
+    vetor[0]=vetor[trocaComMenor];
+    vetor[trocaComMenor]=temp;
+
+    printf("Vetor depois da troca:\n");
+    for (int i = 0; i < tam; i++) {
+        printf("%d ", vetor[i]);
+    }
+    printf("\n");
 }
 
 int main() {
