@@ -2,7 +2,6 @@
 
 int main() {
     int a, b, encontrouPrimo = 0;
-    printf("Digite dois numeros inteiros A e B (A < B): ");
     scanf("%d %d", &a, &b);
 
     if (a >= b) {
