@@ -12,8 +12,10 @@ int main(){
     int idade;
 
     for(int i=0; i<3; i++) {
-    printf("Digite primeiro nome e idade: ");
-    scanf("%s, %d", nome, idade);
+    printf("Digite primeiro nome: ");
+    scanf("%s", &nome);
+    printf("Digite a idade: ");
+    scanf("%d", &idade);
 
     fprintf(arquivo, "%s %d\n", nome, idade);
     }
